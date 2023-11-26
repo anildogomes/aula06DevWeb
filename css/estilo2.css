@@ -1,0 +1,111 @@
+/***************************************
+ * BARRA DE NAVEGAÇÃO COM ABAS */
+ * 
+ 
+ body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+ }
+
+ ul{ /*FORMATAR A BARRA DE NAVEGAÇÃO - MENU*/
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+  
+ }
+
+ ul li { /*FORMATAR O MENU PARA FLUTUAR */
+   
+   float: left;
+   background: url(../imagens/aba-direita.png) no-repeat top right;
+ }
+
+ li a { /*FORMATAR OS LINKS */
+   display:block ;
+   padding: 0 2em;
+   line-height: 3em;
+   text-decoration: none;
+   background: url(../imagens/aba-esquerda.png) no-repeat top left;
+   color: #fff;
+
+ }
+
+ ul a:hover{
+  color: #894a1f;
+
+ }
+
+ul #atual {
+  background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+
+}
+
+ul #atual a{
+  background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+
+
+* **************************************************************************** * 
+
+
+#container {
+  width: 85%;
+  margin: 0 auto;
+  background: #fff;
+  min-width: 600px;
+  /*max-width: 960px;*/
+ }
+
+#marca {
+  width: 100%;
+  height: 100%;
+  background: #re;
+  text-align: center;
+  line-height: 100px;
+}
+
+
+#conteudo-principal{
+  width: 63%;
+  float: left; /*VAI FLUTUAR A ESQUERDA */
+  background: #d1d1d1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#conteudo-secundario{
+  width: 35%;
+  float: right; /*VAI FLUTUAR A DIREITA */
+  background: #d1d1d1;
+
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#conteudo-secundario h3,
+#conteudo-secundario p{
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+
+
+
+#navegacao ul { /* RETIRAR MARCAÇÃO DE LINHAS */
+  list-style: none;
+}
+
+#navegacao li a{ /* RETIRAR SUBLINHADO DAS LINHAS */
+  text-decoration: none;
+}
+
+#rodape {
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}
